@@ -66,8 +66,9 @@ class MusicLibraryController
     #puts reply
     
     artist = nil
-    #artist = Artist.all.detect {|item| item.name == reply}
+    artist = Artist.all.detect {|item| item.name == reply}
     
+    if artist
     #songs = artist.songs
     #songs.sort_by! {|song| song.name}
     #i = 0
