@@ -102,6 +102,9 @@ class MusicLibraryController
     song_number = gets.strip
     
     songs = Song.all
+    songs.sort_by! {|song| song.name}
+    
+    
     
   end
   
