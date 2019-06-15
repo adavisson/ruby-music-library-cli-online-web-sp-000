@@ -64,16 +64,17 @@ class MusicLibraryController
     reply = gets.strip
     #puts reply
     
-    artist = Artist.all.detect {|item| item.name == reply}
+    #artist = Artist.all.detect {|item| item.name == reply}
     
-    songs = artist.songs
-    songs.sort_by! {|song| song.name}
-    i = 0
+    #songs = artist.songs
+    #songs.sort_by! {|song| song.name}
+    #i = 0
     
-    while i < songs.length
-      puts "#{i + 1}. #{songs[i].name} - #{songs[i].genre.name}"
-      i += 1
-    end
+    #while i < songs.length
+    #  puts "#{i + 1}. #{songs[i].name} - #{songs[i].genre.name}"
+    #  i += 1
+    #end
+
   end
   
 end
