@@ -99,7 +99,7 @@ class MusicLibraryController
   def play_song
     #list_songs
     puts "Which song number would you like to play?"
-    song_number = gets.strip
+    song_number = gets.strip.to_i
     
     songs = Song.all
     songs.sort_by! {|song| song.name}
