@@ -60,10 +60,7 @@ class MusicLibraryController
   
   def list_songs_by_artist
     puts "Please enter the name of an artist:"
-    
     reply = gets.strip
-    #binding.pry
-    #puts reply
     
     artist = nil
     artist = Artist.all.detect {|item| item.name == reply}
@@ -83,6 +80,20 @@ class MusicLibraryController
   def list_songs_by_genre
     puts "Please enter the name of a genre:"
     reply = gets.strip
+    
+    genre = nil
+    genre = Genre.all.detect {|item| item.name == reply}
+    
+    if genre
+      songs = genre.songs
+      songs.sort_by! {|song| song.name}
+      i = 0
+      
+      while i < songs.length
+        puts "#{i + 1}. #{songs[i].artist.name} - #{songs[i].name}"
+        i += 1s
+      end
+    end
   end
   
 end
