@@ -91,7 +91,7 @@ class MusicLibraryController
       
       while i < songs.length
         puts "#{i + 1}. #{songs[i].artist.name} - #{songs[i].name}"
-        i += 1s
+        i += 1
       end
     end
   end
