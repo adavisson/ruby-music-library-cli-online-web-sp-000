@@ -22,6 +22,8 @@ class MusicLibraryController
       puts "What would you like to do?"
     
       reply = gets
+      
+      
     end
   end
   
