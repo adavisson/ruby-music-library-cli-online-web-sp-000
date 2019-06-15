@@ -62,10 +62,10 @@ class MusicLibraryController
     puts "Please enter the name of an artist:"
     
     reply = gets.strip
-    
-    binding.pry
+    #binding.pry
     #puts reply
     
+    artist = nil
     #artist = Artist.all.detect {|item| item.name == reply}
     
     #songs = artist.songs
