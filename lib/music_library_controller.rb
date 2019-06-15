@@ -62,6 +62,8 @@ class MusicLibraryController
     puts "Please enter the name of an artist:"
     
     reply = gets.strip
+    
+    binding.pry
     #puts reply
     
     #artist = Artist.all.detect {|item| item.name == reply}
