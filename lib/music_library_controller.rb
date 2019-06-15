@@ -102,6 +102,7 @@ class MusicLibraryController
     song_number = gets.strip.to_i
     songs = Song.all
     songs.sort_by! {|song| song.name}
+    
     if (song_number > 0) && (song_number <= songs.length)
       if songs[song_number - 1]
         puts "Playing #{songs[song_number - 1].name} by #{songs[song_number - 1].artist.name}"
